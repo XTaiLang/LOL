@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BaseHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v4q-mQ-ZJw">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                </scrollView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOd-Ff-LND">
+                    <rect key="frame" x="0.0" y="170" width="320" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="fWj-tW-JVV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AOd-Ff-LND" secondAttribute="trailing" id="93i-fa-7U5"/>
+                <constraint firstItem="AOd-Ff-LND" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Gy6-lb-13j"/>
+                <constraint firstAttribute="bottom" secondItem="AOd-Ff-LND" secondAttribute="bottom" id="VXm-6C-7ml"/>
+                <constraint firstItem="v4q-mQ-ZJw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Vix-DQ-DPO"/>
+                <constraint firstAttribute="bottom" secondItem="v4q-mQ-ZJw" secondAttribute="bottom" id="ekk-gM-2Hj"/>
+                <constraint firstAttribute="trailing" secondItem="v4q-mQ-ZJw" secondAttribute="trailing" id="jsQ-bZ-SOn"/>
+                <constraint firstItem="v4q-mQ-ZJw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wJP-wN-kdf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="myScrollView" destination="v4q-mQ-ZJw" id="D9z-sw-3UM"/>
+                <outlet property="nameLab" destination="AOd-Ff-LND" id="OPM-0F-ZHB"/>
+            </connections>
+            <point key="canvasLocation" x="185" y="170"/>
+        </view>
+    </objects>
+</document>

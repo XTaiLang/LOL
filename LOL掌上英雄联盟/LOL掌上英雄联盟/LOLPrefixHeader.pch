@@ -1,0 +1,70 @@
+//
+//  LOLPrefixHeader.pch
+//  LOL掌上英雄联盟
+//
+//  Created by iJeff on 15/11/16.
+//  Copyright (c) 2015年 iJeff. All rights reserved.
+//
+
+#ifndef LOL_______LOLPrefixHeader_pch
+#define LOL_______LOLPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+//在targets -> Build setting -> Prefix Header 选项中填入此.pch文件的路径
+
+/**
+ *  系统头文件
+ */
+#import <UIKit/UIKit.h>
+
+
+/**
+ *  第三方库头文件
+ */
+#import "AFNetworking.h"
+#import "MBProgressHUD.h" //指示器
+#import "Masonry.h" 
+#import "MJRefresh.h" 
+#import "NSString+URLEncoding.h"
+
+#import "RDVTabBarController.h"
+#import "RDVTabBarItem.h"
+#import "UIImageView+WebCache.h"
+
+
+/**
+ *  自己类的头文件
+ */
+#import "UrlDefine.h" //接口
+#import "CustomTabBarController.h"
+#import "HTTPRequestManager.h"
+
+#import "BaseModel.h" //model
+#import "BaseHeaderModel.h" 
+
+/**
+ *  宏
+ */
+#define  kFont(size) ([UIFont systemFontOfSize:(size)])
+#define  kColor(r, g, b, a) ([UIColor colorWithRed:(r) green:(g) blue:(b) alpha:(a)])
+
+
+#define  kScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define  kScreenHeight ([UIScreen mainScreen].bounds.size.height)
+
+
+
+
+
+
+
+
+#endif
+
+
+
+
